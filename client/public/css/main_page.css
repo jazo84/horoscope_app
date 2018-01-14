@@ -1,0 +1,12 @@
+.jumbotron {
+  background-image: url(http://az616578.vo.msecnd.net/files/2016/10/03/636110932486862888-1191568155_astrology%201.jpg) !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  height:300px;
+}
+
+.zodiac_images{
+  width:150px;
+  height:255px;
+}

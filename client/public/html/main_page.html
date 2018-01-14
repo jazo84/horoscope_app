@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Horoscope App</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../public/css/main_page.css">
+</head>
+<body>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Horoscope App</h1>
+      <p class="lead">Find Your Zodiac and Horoscope.</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-7">
+        <p>Enter your information below and find out your zodiac sign and your daily horoscope</p>
+        <div class="card">
+          <div class="card-body">
+        <form id="zodiac-form">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" class="form-control" id="name-input" aria-describedby="emailHelp" placeholder="Enter Your Full Name">
+          </div>
+          <div class="form-group">
+            <label for="birthday">Birth Date</label>
+            <input type="text" class="form-control" id="birthdate-input" placeholder="Enter Birth Date - MM/DD/YYYY">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        </div>
+      </div>
+    </div>
+      <div class="col-sm-5">
+        Find Users By Zodiac:
+        <br><br>
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+          Zodiac Signs
+          </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">Aries</a></li>
+          <li><a class="dropdown-item" href="#">Taurus</a></li>
+          <li><a class="dropdown-item" href="#">Gemini</a></li>
+          <li><a class="dropdown-item" href="#">Cancer</a></li>
+          <li><a class="dropdown-item" href="#">Leo</a></li>
+          <li><a class="dropdown-item" href="#">Virgo</a></li>
+          <li><a class="dropdown-item" href="#">Libra</a></li>
+          <li><a class="dropdown-item" href="#">Pisces</a></li>
+          <li><a class="dropdown-item" href="#">Aquarius</a></li>
+          <li><a class="dropdown-item" href="#">Scorpio</a></li>
+          <li><a class="dropdown-item" href="#">Sagittarius</a></li>
+          <li><a class="dropdown-item" href="#">Capricorn</a></li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <div class="container" id="zodiac_signs">
+    <p>Find Out More Information on all zodiac signs:</p>
+    <div class="row">
+      <div class="col-sm-2">
+        Aquarius
+        <img src="http://www.alliphonewallpapers.com/images/wallpapers/xhneswq5u.jpg" class="zodiac_images">
+      </div>
+      <div class="col-sm-2">
+        Pisces
+        <img src="http://www.alliphonewallpapers.com/images/wallpapers/640x1136/6mbbpsqrd.jpg" class="zodiac_images">
+      </div>
+      <div class="col-sm-2">
+        Aries
+        <img src="http://www.alliphonewallpapers.com/images/wallpapers/4ao112wfy.jpg" class="zodiac_images">
+      </div>
+      <div class="col-sm-2">
+        Taurus
+        <img src="http://www.alliphonewallpapers.com/images/wallpapers/bxr61he4p.jpg" class="zodiac_images">
+      </div>
+      <div class="col-sm-2">
+        Gemini
+        <img src="http://www.alliphonewallpapers.com/images/wallpapers/640/bb5ivo5fs.jpg" class="zodiac_images">
+      </div>
+      <div class="col-sm-2">
+        Cancer
+        <img src="https://i.pinimg.com/originals/2b/26/08/2b2608ee108bb84eab1f6c6c4dcc5a71.jpg" class="zodiac_images">
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-sm-2">
+        Leo
+        <img src="http://www.alliphonewallpapers.com/images/wallpapers/640/uamvez7ec.jpg" class="zodiac_images">
+      </div>
+      <div class="col-sm-2">
+        Virgo
+        <img src="http://www.alliphonewallpapers.com/images/wallpapers/640x1136/n6rmpsnq6.jpg" class="zodiac_images">
+      </div>
+      <div class="col-sm-2">
+        Libra
+        <img src="http://www.alliphonewallpapers.com/images/wallpapers/640/y1zu17mkt.jpg" class="zodiac_images">
+      </div>
+      <div class="col-sm-2">
+        Scorpio
+        <img src="http://www.alliphonewallpapers.com/images/wallpapers/640/2s27140cn.jpg" class="zodiac_images">
+      </div>
+      <div class="col-sm-2">
+        Sagittarius
+        <img src="https://i.pinimg.com/736x/80/8f/03/808f03eee0662ce47ff74b12443261fb.jpg" class="zodiac_images">
+      </div>
+      <div class="col-sm-2">
+        Capricorn
+        <img src="http://www.alliphonewallpapers.com/images/wallpapers/640/qmmr4tu2e.jpg" class="zodiac_images">
+      </div>
+    </div>
+  </div>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="../../public/js/main_page.js"></script>
+</body>
+</html>
